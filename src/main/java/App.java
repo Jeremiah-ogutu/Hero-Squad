@@ -69,16 +69,16 @@ public class App {
             return new ModelAndView(model,"hero-detail.hbs");
         }, new HandlebarsTemplateEngine());
 
-//        //get show a form to update hero
-//        get("/heros/:id/update",(request, response) -> {
-//            Map <String,Object>model = new HashMap<>();
-//
-//            int idOfTheHeroToEdit =Integer.parseInt(request.params("id"));
-//            Hero editHero = Hero.findById(idOfTheHeroToEdit);
-//            model.put("editHero",editHero);
-//            return new ModelAndView(model,"hero-form.hbs");
-//
-//        },new HandlebarsTemplateEngine());
+        //get show a form to update hero
+        get("/heros/:id/update",(request, response) -> {
+            Map <String,Object>model = new HashMap<>();
+
+            int idOfTheHeroToEdit =Integer.parseInt(request.params("id"));
+            Hero editHero = Hero.findById(idOfTheHeroToEdit);
+            model.put("editHero",editHero);
+            return new ModelAndView(model,"hero-form.hbs");
+
+        },new HandlebarsTemplateEngine());
 //
 //        //task:process a form to update a hero
 //        post("/heros/:id/update",(request, response) -> {
