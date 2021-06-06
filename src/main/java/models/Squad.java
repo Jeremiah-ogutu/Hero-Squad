@@ -1,9 +1,9 @@
-//package models;
-//import java.util.ArrayList;
-//import java.util.Objects;
-//
-//public class Squad {
-//    @Override
+package models;
+import java.util.ArrayList;
+import java.util.Objects;
+
+public class Squad {
+    @Override
 //    public boolean equals(Object o) {
 //        if (this == o) return true;
 //        if (o == null || getClass() != o.getClass()) return false;
