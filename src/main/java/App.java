@@ -36,18 +36,18 @@ public class App {
         },new HandlebarsTemplateEngine());
 
 //
-//        //task: process new hero form
-//        post ("/heros/new",(request, response) -> {
-//            Map<String,Object>model = new HashMap<>();
-//            String name =request.queryParams("name");
-//            int age = Integer.parseInt(request.queryParams("age"));
-//            String power= request.queryParams("power");
-//            String weakness = request.queryParams("weakness");
-//            Hero newIdentity =new Hero(name,age,power,weakness);
-//            model.put("hero",newIdentity);
-//            return new ModelAndView(model,"success.hbs");
-//        }, new HandlebarsTemplateEngine());
-//
+        //task: process new hero form
+        post ("/heros/new",(request, response) -> {
+            Map<String,Object>model = new HashMap<>();
+            String name =request.queryParams("name");
+            int age = Integer.parseInt(request.queryParams("age"));
+            String power= request.queryParams("power");
+            String weakness = request.queryParams("weakness");
+            Hero newIdentity =new Hero(name,age,power,weakness);
+            model.put("hero",newIdentity);
+            return new ModelAndView(model,"success.hbs");
+        }, new HandlebarsTemplateEngine());
+
 //
 //        //get to show all heros
 //        get("/",(request, response) -> {
