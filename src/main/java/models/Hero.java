@@ -67,21 +67,21 @@ public class Hero {
         this.power= power;
         this.weakness=weakness;
     }
-//    public void deleteById(int id){
-//        instances.remove(id-1);
-//    }
-//
-//
-//    public String getPower(){
-//        return power;
-//    };
-//    public String getWeakness(){
-//        return weakness;
-//    }
-//
-//    public int getId(){
-//        return id;
-//    }
-//
-//}
-//
+    public void deleteById(int id){
+        instances.remove(id-1);
+    }
+
+
+    public String getPower(){
+        return power;
+    };
+    public String getWeakness(){
+        return weakness;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+}
+
