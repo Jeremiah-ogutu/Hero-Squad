@@ -27,21 +27,21 @@ public class Squad {
     private static ArrayList<Squad> squads = new ArrayList<>();
 //
 //
-//    public Squad(String squadName ,int maxNum,String cause){
-//        this.squadName=squadName;
-//        this.cause=cause;
-//        this.maxNum=maxNum;
-//        squads.add(this);
-//    }
-//
-//    public String getSquadName(){
-//        return squadName;
-//    }
-//
-//    public String getCause(){
-//        return cause;
-//    }
-//
+    public Squad(String squadName ,int maxNum,String cause){
+        this.squadName=squadName;
+        this.cause=cause;
+        this.maxNum=maxNum;
+        squads.add(this);
+    }
+
+    public String getSquadName(){
+        return squadName;
+    }
+
+    public String getCause(){
+        return cause;
+    }
+
 //    public int getMaxNum(){
 //        return maxNum;
 //    }
