@@ -28,22 +28,22 @@ public class Hero {
     private static ArrayList<Hero> instances = new ArrayList<>();
 //
 //
-//    public Hero(String name, int age, String power, String weakness){
-//
-//        this.name=name;
-//        this.age =age;
-//        this.power=power;
-//        this.weakness=weakness;
-//        instances.add(this);
-//
-//    }
-//    public String getName(){
-//        return name;
-//    }
-//
-//    public int getAge(){
-//        return age;
-//    }
+    public Hero(String name, int age, String power, String weakness){
+
+        this.name=name;
+        this.age =age;
+        this.power=power;
+        this.weakness=weakness;
+        instances.add(this);
+
+    }
+    public String getName(){
+        return name;
+    }
+
+    public int getAge(){
+        return age;
+    }
 //
 //    public static ArrayList<Hero>getAll(){
 //        return instances;
