@@ -14,17 +14,17 @@ public class Squad {
                 Objects.equals(cause, squad.cause);
     }
 
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(squadName, maxNum, cause, id);
-//    }
-//
-//    private String squadName;
-//    private int maxNum;
-//    private String cause;
-//
-//    private int id;
-//    private static ArrayList<Squad> squads = new ArrayList<>();
+    @Override
+    public int hashCode() {
+        return Objects.hash(squadName, maxNum, cause, id);
+    }
+
+    private String squadName;
+    private int maxNum;
+    private String cause;
+
+    private int id;
+    private static ArrayList<Squad> squads = new ArrayList<>();
 //
 //
 //    public Squad(String squadName ,int maxNum,String cause){
