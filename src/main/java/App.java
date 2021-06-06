@@ -60,15 +60,15 @@ public class App {
 
         }, new HandlebarsTemplateEngine());
 //
-//        //show an individual hero
-//        get("/heros/:id",(request, response) -> {
-//            Map<String,Object>model = new HashMap<>();
-//            int idOfHeroToFind = Integer.parseInt(request.params(":id"));
-//            Hero foundHero= Hero.findById(idOfHeroToFind);
-//            model.put("hero",foundHero);
-//            return new ModelAndView(model,"hero-detail.hbs");
-//        }, new HandlebarsTemplateEngine());
-//
+        //show an individual hero
+        get("/heros/:id",(request, response) -> {
+            Map<String,Object>model = new HashMap<>();
+            int idOfHeroToFind = Integer.parseInt(request.params(":id"));
+            Hero foundHero= Hero.findById(idOfHeroToFind);
+            model.put("hero",foundHero);
+            return new ModelAndView(model,"hero-detail.hbs");
+        }, new HandlebarsTemplateEngine());
+
 //        //get show a form to update hero
 //        get("/heros/:id/update",(request, response) -> {
 //            Map <String,Object>model = new HashMap<>();
