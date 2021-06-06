@@ -55,7 +55,7 @@ public class App {
             ArrayList<Hero> heros = Hero.getAll();
             ArrayList<Squad>squads =Squad.getAll();
             model.put("heros",heros);
-//            model.put("squads",squads);
+            model.put("squads",squads);
             return new ModelAndView(model,"index.hbs");
 
         }, new HandlebarsTemplateEngine());
