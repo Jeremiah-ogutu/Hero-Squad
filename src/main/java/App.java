@@ -18,23 +18,23 @@ public class App {
 
 
 
-//        if (process.environment().get("PORT") != null) {
-//            port = Integer.parseInt(process.environment().get("PORT"));
-//        } else {
-//            port = 4567;
-//        }
-//
-//        port(port);
-//        staticFileLocation("/public");
-//
-//
-//        //get to show new hero form
-//        get("/heros/new",(request, response) -> {
-//            Map<String,Object> model = new HashMap<>();
-//            return new ModelAndView(model,"hero-form.hbs");
-//
-//        },new HandlebarsTemplateEngine());
-//
+        if (process.environment().get("PORT") != null) {
+            port = Integer.parseInt(process.environment().get("PORT"));
+        } else {
+            port = 4567;
+        }
+
+        port(port);
+        staticFileLocation("/public");
+
+
+        //get to show new hero form
+        get("/heros/new",(request, response) -> {
+            Map<String,Object> model = new HashMap<>();
+            return new ModelAndView(model,"hero-form.hbs");
+
+        },new HandlebarsTemplateEngine());
+
 //
 //        //task: process new hero form
 //        post ("/heros/new",(request, response) -> {
