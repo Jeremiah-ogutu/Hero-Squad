@@ -15,17 +15,17 @@ public class Hero {
                 Objects.equals(weakness, hero.weakness);
     }
 //
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(name, age, power, weakness, id);
-//    }
-//
-//    private String name;
-//    private int age;
-//    private String power;
-//    private String weakness;
-//    private int id;
-//    private static ArrayList<Hero> instances = new ArrayList<>();
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, power, weakness, id);
+    }
+
+    private String name;
+    private int age;
+    private String power;
+    private String weakness;
+    private int id;
+    private static ArrayList<Hero> instances = new ArrayList<>();
 //
 //
 //    public Hero(String name, int age, String power, String weakness){
