@@ -1,13 +1,13 @@
 body{
-background-color:grey;
+background-color:gray;
 
 color: grey;
-font-size:50px;
+font-size:40px;
 font-family: 'Times New Roman', Times, serif;
 }
 
 .container{
-background-color:blue;
+background-color:lightblue;
 margin-top:3%;
 width:60%;
 ont-size:25px;
