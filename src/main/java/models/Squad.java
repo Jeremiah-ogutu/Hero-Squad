@@ -42,13 +42,13 @@ public class Squad {
         return cause;
     }
 
-//    public int getMaxNum(){
-//        return maxNum;
-//    }
-//    public static ArrayList<Squad>getAll(){
-//        return squads;
-//    }
-//
-//
-//
-//}
+    public int getMaxNum(){
+        return maxNum;
+    }
+    public static ArrayList<Squad>getAll(){
+        return squads;
+    }
+
+
+
+}

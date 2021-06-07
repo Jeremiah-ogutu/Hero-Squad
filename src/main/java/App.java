@@ -29,7 +29,7 @@ public class App {
 
 
         //get to show new hero form
-        get("/heros/new",(request, response) -> {
+        get("/heros/new",(request, response) ->  {
             Map<String,Object> model = new HashMap<>();
             return new ModelAndView(model,"hero-form.hbs");
 
@@ -38,7 +38,7 @@ public class App {
 //
         //task: process new hero form
         post ("/heros/new",(request, response) -> {
-            Map<String,Object>model = new HashMap<>();
+            Map<String,Object>model = new HashMap<String, Object>();
             String name =request.queryParams("name");
             int age = Integer.parseInt(request.queryParams("age"));
             String power= request.queryParams("power");
@@ -51,25 +51,25 @@ public class App {
 //
         //get to show all heros
         get("/",(request, response) -> {
-            Map<String,Object> model = new HashMap<>();
+            Map<String,Object> model = new HashMap<String, Object>();
             ArrayList<Hero> heros = Hero.getAll();
             ArrayList<Squad>squads =Squad.getAll();
             model.put("heros",heros);
-            model.put("squads",squads);
+//            model.put("squads",squads);
             return new ModelAndView(model,"index.hbs");
 
         }, new HandlebarsTemplateEngine());
 //
         //show an individual hero
         get("/heros/:id",(request, response) -> {
-            Map<String,Object>model = new HashMap<>();
+            Map<String,Object>model = new HashMap<String, Object>();
             int idOfHeroToFind = Integer.parseInt(request.params(":id"));
             Hero foundHero= Hero.findById(idOfHeroToFind);
             model.put("hero",foundHero);
             return new ModelAndView(model,"hero-detail.hbs");
         }, new HandlebarsTemplateEngine());
 
-        //get show a form to update hero
+//        get show a form to update hero
         get("/heros/:id/update",(request, response) -> {
             Map <String,Object>model = new HashMap<>();
 
