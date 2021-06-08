@@ -128,7 +128,7 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
 
-        get("/squads/list",(request, response) -> {
+        get("/squads/list/:id",(request, response) -> {
             Map<String, Object> model = new HashMap<>();
             ArrayList<Squad> squads = Squad.getAll();
             model.put("squads", squads);

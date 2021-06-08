@@ -1,16 +1,18 @@
 body{
-background-color:gray;
+background-image: url(../images/immagy.webp);
+background-size: cover;
+background-repeat: no-repeat;
 
-color: grey;
-font-size:40px;
+color: blue;
+font-size:xx-large;
 font-family: 'Times New Roman', Times, serif;
 }
-
+ 
 .container{
-background-color:lightblue;
+background-color:transparent;
 margin-top:3%;
 width:60%;
-ont-size:25px;
+font-size:25px;
 font-family: 'Times New Roman', Times, serif;
 }
 .nav{
@@ -20,9 +22,9 @@ color:blue;
 border:1px hidden;
 border-radius:5px;
 box-sizing:border-box;
-box-shadow: 1px 3px 2px 3px pink;
+box-shadow: rgb(218, 132, 132);
 padding:10px;
-background-color:blue;
+background-color:rgb(177, 182, 182);
 font-size:20px;
 font-family: 'Times New Roman', Times, serif;
-}
+} 
